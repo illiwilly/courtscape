@@ -1,0 +1,22 @@
+# Databricks App configuration for Courtscape
+# Legal data search and navigation application
+
+command:
+  - /bin/bash
+  - -c
+  - |
+    # Install dependencies
+    npm install
+    
+    # Build the React frontend
+    npm run build
+    
+    # Start the Express server
+    # The PORT environment variable will be set to DATABRICKS_APP_PORT
+    npm start
+
+env:
+  - name: NODE_ENV
+    value: production
+  - name: PORT
+    value: "8000"
