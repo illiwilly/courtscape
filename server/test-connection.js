@@ -12,7 +12,7 @@
  */
 
 import dotenv from 'dotenv';
-import db from './server.db.connection.js';
+import db from './db/connection.js';
 import queries from './server.db.queries.js';
 
 dotenv.config();

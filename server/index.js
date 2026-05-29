@@ -3,10 +3,10 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import db from './server.db.connection.js';
-import searchRoutes from './server.routes.search.js';
-import lawfirmsRoutes from './server.routes.lawfirms.js';
-import analyticsRoutes from './server.routes.analytics.js';
+import db from './db/connection.js';
+import searchRoutes from './routes/search.js';
+import lawfirmsRoutes from './routes/lawfirms.js';
+import analyticsRoutes from './routes/analytics.js';
 
 dotenv.config();
 
