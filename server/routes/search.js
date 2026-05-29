@@ -6,8 +6,8 @@
  */
 
 import express from 'express';
-import db from '../server.db.connection.js';
-import queries from '../server.db.queries.js';
+import db from '../db/connection.js';
+import queries from '../db/queries.js';
 
 const router = express.Router();
 
